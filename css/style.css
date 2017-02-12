@@ -623,7 +623,7 @@ HERO SECTION
 }
 @media screen and (max-width: 768px) {
   .tpl-cover {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -697,8 +697,6 @@ SECCIONES
 */
 #fh5co-counter,
 #tpl-last-section,
-#tpl-work-section_2,
-#tpl-blog-section,
 #tpl-team-section,
 #tpl-features {
   padding: 7em 0;
@@ -707,8 +705,6 @@ SECCIONES
   #fh5co-counter,
   #tpl-last-section,
   #tpl-team-section,
-  #tpl-work-section_2,
-  #tpl-blog-section,
   #tpl-features {
     padding: 4em 0;
   }
@@ -1000,4 +996,44 @@ Footer
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-
+/*
+============================================================
+SECTION CONTENIDO
+============================================================
+*/
+section {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box !important;
+    display: block;
+    padding: 30px 0 25px;
+    position: relative;
+    transition: all 0.4s ease 0s;
+}
+.contenido .container {
+  position: relative;
+}
+h1.blog-post-title {
+    font-size: 26px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+    color: #484848;
+    margin-bottom: 25px;
+}
+.dropcap::first-letter {
+    color: #333;
+    display: inline-block;
+    float: left;
+    font-size: 70px;
+    line-height: 60px;
+    margin-right: 6px;
+    margin-top: -3px;
+    padding: 4px 8px 4px 4px;
+}
+.contenido p{
+  color: #4c4c4c;
+}
